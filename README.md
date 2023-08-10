@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Creating type script app
+`npx create-react-app my-app --template typescript`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# install type script packages
+`npm install --save typescript @types/node @types/react @types/react-dom @types/jest`
 
 ## Available Scripts
 
