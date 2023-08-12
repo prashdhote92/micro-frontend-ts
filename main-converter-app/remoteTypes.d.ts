@@ -1,4 +1,4 @@
-declare module 'length/length/LengthConverter' {
+declare module 'length/LengthConverter' {
     const LengthConverter: React.ComponentType;
   
     export default LengthConverter;

@@ -5,12 +5,10 @@ const deps = require('./package.json').dependencies;
 
 const buildDate = new Date().toLocaleString();
 
-module.exports = (env, argv) => {
-    const isProduction = argv.mode === 'production';
-    console.log({ isProduction });
+module.exports = () => {
     return {
         entry: './src/index.ts',
-        mode: process.env.NODE_ENV || 'development',
+        mode: 'development',
         devServer: {
             port: 3000,
             open: true,
