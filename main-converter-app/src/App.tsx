@@ -1,17 +1,16 @@
-import { Suspense } from 'react';
+import React, { Suspense } from 'react';
 import './App.css';
 
-// const LengthConverter = React.lazy(() => import('length/LengthConverter'));
-// const AreaConverter = React.lazy(() => import('area/AreaConverter'));
+const LengthConverter = React.lazy(() => import("length_pack/LengthConverter"));
+//const CounterAppTwo = React.lazy(() => import("app2/CounterAppTwo"));
 
-function App() {
-  return (
+const App = () => (
     <div className="App">
       <h1>Hello</h1>
       <div>
         <div>
           <Suspense>
-            {/* <LengthConverter /> */}
+            <LengthConverter />
           </Suspense>
         </div>
         <div>
@@ -21,7 +20,6 @@ function App() {
         </div>
       </div>
     </div>
-  );
-}
+  )
 
 export default App;

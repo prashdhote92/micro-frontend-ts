@@ -23,7 +23,7 @@ module.exports = {
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: 'length1',
+            name: 'length_pack',
             filename: 'remoteConverter.js',
             exposes: {
                 // expose each component
